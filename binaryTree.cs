@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,6 +9,11 @@ namespace text_search_app
 {
     internal class BinaryTree
     {
+        private string btmax_Click() Handles btmax.Click
+            = TreeNode .Parse(text)
+            if (one > two ) Then
+        lblmax.Text - one
+        esleif (lblmax.Text - one) Then 
         Node root;
         public BinaryTree()
         {
@@ -51,6 +57,7 @@ namespace text_search_app
                     else {
                         currentNode.data.word.Add(newNode.data.word[0]);
                     
+                        
                     
                     }
                 }
