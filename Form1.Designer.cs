@@ -79,6 +79,7 @@
             this.btn_longest_word.TabIndex = 5;
             this.btn_longest_word.Text = "най-голяма дума";
             this.btn_longest_word.UseVisualStyleBackColor = true;
+            this.btn_longest_word.Click += new System.EventHandler(this.btn_longest_word_Click);
             // 
             // box_number_search
             // 

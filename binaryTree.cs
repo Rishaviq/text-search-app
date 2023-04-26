@@ -50,11 +50,30 @@ namespace text_search_app
                     }
                     else {
                         currentNode.data.word.Add(newNode.data.word[0]);
-                    
+                        break;
                     
                     }
                 }
             }
         }
+
+
+        public List<string> Max() {
+            
+            Node currentNode=root;
+            while (true) {
+                if (currentNode.right == null)
+                {
+                    return currentNode.data.word;
+                }
+                else { currentNode = currentNode.right; }
+            
+            }
+           
+            
+            
+            
+        }
+        
     }
 }
