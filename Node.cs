@@ -14,6 +14,11 @@ namespace text_search_app
             this.data = data;
             this.left = null;
             this.right = null;
+
+        }
+        public Node() {
+        
+        
         }
 
         

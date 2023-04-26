@@ -18,7 +18,7 @@ namespace text_search_app
         }
 
        public Words() {
-        word = new List<string>();
+       this.word = new List<string>();
         }
     }
 }

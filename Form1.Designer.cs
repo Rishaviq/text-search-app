@@ -54,6 +54,7 @@
             this.btn_number_search.TabIndex = 1;
             this.btn_number_search.Text = "търсене";
             this.btn_number_search.UseVisualStyleBackColor = true;
+            this.btn_number_search.Click += new System.EventHandler(this.btn_number_search_Click);
             // 
             // box_specific_word_search
             // 
@@ -70,6 +71,7 @@
             this.btn_specific_word_search.TabIndex = 3;
             this.btn_specific_word_search.Text = "търсене";
             this.btn_specific_word_search.UseVisualStyleBackColor = true;
+            this.btn_specific_word_search.Click += new System.EventHandler(this.btn_specific_word_search_Click);
             // 
             // btn_longest_word
             // 
@@ -79,6 +81,7 @@
             this.btn_longest_word.TabIndex = 5;
             this.btn_longest_word.Text = "най-голяма дума";
             this.btn_longest_word.UseVisualStyleBackColor = true;
+            this.btn_longest_word.Click += new System.EventHandler(this.btn_longest_word_Click);
             // 
             // box_number_search
             // 
