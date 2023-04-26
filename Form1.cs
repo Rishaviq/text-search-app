@@ -33,22 +33,44 @@
 
         private void btn_longest_word_Click(object sender, EventArgs e)
         {
-           string combinedWords = new string("най-голямата дума е ");
+           string firstMessage = new string("Думите/а с най-много символи е/са:");
             List<string> maxWord = new List<string>(treeWords.Max());
-            for (int i = 0; i < maxWord.Count; i++)
-            {
-                if (i > 0)
-                {
-                   
-                    combinedWords = combinedWords + " и " + maxWord[i]; ;
-                }
-                else
-                {
-                    combinedWords = combinedWords + maxWord[i];
-                    
-                }
+           maxWord.Insert(0, firstMessage);
+
+            WordList forma=new WordList();
+            forma.Show();
+
+            for (int i = 0; i < maxWord.Count; i++) {
+                
+                forma.listView1.Items.Add(maxWord[i]);
             }
-            MessageBox.Show(combinedWords);
+            
+           
+        }
+
+        private void btn_number_search_Click(object sender, EventArgs e)
+        {
+            string firstMessage = new string("Думите/а с този брой символи е/са");
+            List<string> searchedWords = new List<string>(treeWords.SearchByNumber(Convert.ToInt32(box_number_search.Value)));
+            searchedWords.Insert(0, firstMessage);
+
+            WordList forma = new WordList();
+            forma.Show();
+
+            for (int i = 0; i < searchedWords.Count; i++)
+            {
+
+                forma.listView1.Items.Add(searchedWords[i]);
+            }
+
+        }
+
+        private void btn_specific_word_search_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show(treeWords.SearchByWord(box_specific_word_search.Text));
+            MessageBox.Show(box_specific_word_search.Text);
+
         }
     }
 }

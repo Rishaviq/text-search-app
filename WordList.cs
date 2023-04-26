@@ -16,5 +16,10 @@ namespace text_search_app
         {
             InitializeComponent();
         }
+
+        private void WordList_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,6 +13,9 @@ namespace text_search_app
         {
             this.root = null;
         }
+
+
+
         public void Add(Words value) {
             Node newNode = new Node(value);
             if (root == null)
@@ -49,13 +52,23 @@ namespace text_search_app
                         }
                     }
                     else {
-                        currentNode.data.word.Add(newNode.data.word[0]);
+                        for (int i = 0; i < currentNode.data.word.Count; i++) {
+                            if (currentNode.data.word[i] != newNode.data.word[0]) {
+                                currentNode.data.word.Add(newNode.data.word[0]);
+                                break;
+                            }
+                           break;
+                        }
                         break;
                     
                     }
                 }
             }
         }
+
+
+
+
 
 
         public List<string> Max() {
@@ -69,11 +82,70 @@ namespace text_search_app
                 else { currentNode = currentNode.right; }
             
             }
-           
-            
-            
-            
         }
-        
+
+
+
+
+
+        public List<string> SearchByNumber(int charactersNumber) {
+            Node currentNode=root;
+            while (true)
+            {
+                if (currentNode.data.wordLeanght > charactersNumber)
+                {
+                    if (currentNode.left != null)
+                    {
+                        currentNode = currentNode.left;
+                    }
+                    else
+                    {
+                        List<string> temp = new List<string> { "няма дума с толкова брой символи" };
+                        return temp;
+
+                    }
+                }
+                else if (currentNode.data.wordLeanght < charactersNumber)
+                {
+                    if (currentNode.right != null)
+                    {
+                        currentNode = currentNode.right;
+                    }
+                    else
+                    {
+                        List<string> temp = new List<string> { "няма дума с толкова брой символи" };
+                        return temp;
+
+                    }
+
+
+                }
+
+                else {
+                    return currentNode.data.word;
+                
+                
+                }
+            }
+        }
+
+
+
+
+
+
+        public string SearchByWord(string keyWord) {
+            
+           List<string> closeWords = SearchByNumber(keyWord.Length);
+            for (int i=0; i < closeWords.Count; i++) {
+                if (closeWords[i] == keyWord)
+                {
+                    return "текстът съдържа тази дума";
+                }
+                else return "въведената дума не се намира в текста";
+            }
+
+            return "въведената дума не се намира в текста";
+        }
     }
 }
