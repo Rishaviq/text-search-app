@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace text_search_app
 {
-    internal class Class1
+    internal class Node
     {
+        public Words data;
+        public Node left, right;
+        public Node(Words data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+
+        
+
     }
 }

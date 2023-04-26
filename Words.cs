@@ -8,8 +8,8 @@ namespace text_search_app
 {
     internal class Words : IComparable<Words>
     {
-        int wordLeanght;
-        List<string> word = new List<string>();
+       public int wordLeanght;
+      public  List<string> word = new List<string>();
 
         public int CompareTo(Words that) {
             if (this.wordLeanght < that.wordLeanght) { return -1; }
