@@ -16,5 +16,9 @@ namespace text_search_app
             if (this.wordLeanght == that.wordLeanght) { return 0; }
             return 1;
         }
+
+       public Words() {
+        word = new List<string>();
+        }
     }
 }

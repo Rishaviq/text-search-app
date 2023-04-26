@@ -42,7 +42,7 @@
             this.textBox1.Location = new System.Drawing.Point(12, 180);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(484, 258);
+            this.textBox1.Size = new System.Drawing.Size(480, 254);
             this.textBox1.TabIndex = 0;
             this.textBox1.Validating += new System.ComponentModel.CancelEventHandler(this.textBox1_Validating);
             // 
@@ -57,14 +57,14 @@
             // 
             // box_specific_word_search
             // 
-            this.box_specific_word_search.Location = new System.Drawing.Point(396, 91);
+            this.box_specific_word_search.Location = new System.Drawing.Point(392, 92);
             this.box_specific_word_search.Name = "box_specific_word_search";
             this.box_specific_word_search.Size = new System.Drawing.Size(100, 23);
             this.box_specific_word_search.TabIndex = 2;
             // 
             // btn_specific_word_search
             // 
-            this.btn_specific_word_search.Location = new System.Drawing.Point(396, 121);
+            this.btn_specific_word_search.Location = new System.Drawing.Point(392, 120);
             this.btn_specific_word_search.Name = "btn_specific_word_search";
             this.btn_specific_word_search.Size = new System.Drawing.Size(100, 23);
             this.btn_specific_word_search.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 450);
+            this.ClientSize = new System.Drawing.Size(504, 446);
             this.Controls.Add(this.box_number_search);
             this.Controls.Add(this.btn_longest_word);
             this.Controls.Add(this.btn_specific_word_search);

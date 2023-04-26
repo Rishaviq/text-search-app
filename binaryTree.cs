@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace text_search_app
 {
-    internal class binaryTree
+    internal class BinaryTree
     {
         Node root;
-        public binaryTree()
+        public BinaryTree()
         {
             this.root = null;
         }
