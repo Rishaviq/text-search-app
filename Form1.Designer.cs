@@ -103,6 +103,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+         
             ((System.ComponentModel.ISupportInitialize)(this.box_number_search)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

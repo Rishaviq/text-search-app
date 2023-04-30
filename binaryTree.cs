@@ -137,12 +137,14 @@ namespace text_search_app
         public string SearchByWord(string keyWord) {
             
            List<string> closeWords = SearchByNumber(keyWord.Length);
+            
             for (int i=0; i < closeWords.Count; i++) {
+                
                 if (closeWords[i] == keyWord)
                 {
                     return "текстът съдържа тази дума";
                 }
-                else return "въведената дума не се намира в текста";
+                
             }
 
             return "въведената дума не се намира в текста";
